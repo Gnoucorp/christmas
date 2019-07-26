@@ -1,5 +1,5 @@
 /**
- * Christmas plugin based on jquery for wordpress. Adds a customizable snow effect based on html5 canvas
+ * Christmas plugin, based on jquery. Adds a customizable snow effect based on html5 canvas
  * 
  * Based on code sample from http://thecodeplayer.com/walkthrough/html5-canvas-snow-effect
  * 
@@ -28,7 +28,7 @@ if (typeof Object.create !== "function") {
 	        init: function (options) {
 	            var base = this;
 	
-	            base.options = $.extend({}, $.mgbChristmas.options, options);
+	            base.options = $.extend({}, $.gcChristmas.options, options);
 	
 	            base.particles.splice();
 	            
