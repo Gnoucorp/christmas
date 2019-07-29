@@ -252,6 +252,8 @@ if (typeof Object.create !== "function") {
 	            base.options.customDrawInit(base, base.ctx);
 	            
 	    		for(var i = 0; i < base.particlesCount; i++) {
+	    			var p = base.particles[i];
+					
 	    			base.ctx.moveTo(p.x, p.y);
 	                base.options.customDrawParticle(base, base.ctx, base.particles[i]);
 	    		}
